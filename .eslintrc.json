@@ -1,0 +1,12 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended", "google"],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "codeFrame": false
+    },
+    "plugins": [
+        "react"
+    ]
+}
