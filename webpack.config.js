@@ -1,34 +1,34 @@
-const { resolve } = require('path');
+const {resolve} = require('path');
 const webpack = require('webpack');
 
 module.exports = {
     entry: [
         'react-hot-loader/patch',
-        'webpack-dev-server/client?http://localhost:8080',
+        'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',
         './src/index.js',
     ],
     output: {
         filename: 'bundle.js',
         path: resolve(__dirname, 'public'),
-        publicPath: '/'
+        publicPath: '/',
     },
     devtool: 'eval',
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
     },
     stats: {
         colors: true,
-        reasons: true
+        reasons: true,
     },
     module: {
         rules: [
             {
                 test: /\.js$/,
                 use: [
-                    "babel-loader",
+                    'babel-loader',
                 ],
-                exclude: /node_modules/
+                exclude: /node_modules/,
             },
             {
                 test: /\.(css|scss|sass)$/,
@@ -41,7 +41,7 @@ module.exports = {
         contentBase: resolve(__dirname, 'public'),
         publicPath: '/',
         port: 3000,
-        compress: true
+        compress: true,
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
