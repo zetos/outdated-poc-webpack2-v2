@@ -1,5 +1,5 @@
 {
-    "extends": ["eslint:recommended", "plugin:react/recommended", "google"],
+    "extends": ["plugin:react/recommended", "google"],
     "parser": "babel-eslint",
     "parserOptions": {
         "sourceType": "module",
