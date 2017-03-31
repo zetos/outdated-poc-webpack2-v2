@@ -40,6 +40,8 @@ module.exports = {
         hot: true,
         contentBase: resolve(__dirname, 'public'),
         publicPath: '/',
+        port: 3000,
+        compress: true
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
